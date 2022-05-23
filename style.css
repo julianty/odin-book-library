@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --content-padding: 30px;
+    --header-color: #333333ff;
+    --rhythm: #666a86ff;
+    --card-color: #95b8d1ff;
+    --dutch-white: #e8ddb5ff;
+    --card-read: #edafb8ff;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr;
+    height: 100vh;
+}
+
+.header {
+    background-color: var(--header-color);
+    padding: var(--content-padding);
+    color: white;
+
+}
+
+.content {
+    padding: var(--content-padding);
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    gap: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 25%));
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    align-items: space-between;
+}
+
+.card.read {
+    background-color: var(--card-read);
+}
