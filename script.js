@@ -1,9 +1,12 @@
 let library = [];
 
-function Book(title, author) {
-    this.title = title;
-    this.author = author;
-    this.Card;
+class Book {
+    title;
+    author;
+    constructor (title, author) {
+        this.title = title;
+        this.author = author
+    }
 }
  
 function addBookToLibrary(Book) {
